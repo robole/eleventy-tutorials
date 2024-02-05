@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Eleventy Tutorials",
+    "repository": "https://github.com/robole/eleventy-tutorials"
+  },
+  {
+    "title": "Snippets Ranger",
+    "repository": "https://github.com/robole/vscode-snippets-ranger"
+  },
+  {
+    "title": "File Bunny",
+    "repository": "https://github.com/robole/vscode-file-bunny"
+  },
+  {
+    "title": "Fetching",
+    "repository": "https://github.com/robole/fetching"
+  },
+  {
+    "title": "Now Showing",
+    "repository": "https://github.com/robole/now-showing"
+  }
+]

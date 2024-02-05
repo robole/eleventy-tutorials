@@ -1,0 +1,19 @@
+{
+  "name": "github-projects",
+  "version": "1.0.0",
+  "description": "Creates a projects page based on data.The projects are listed in _data/projects.json, and the data is populated from GitHub.",
+  "scripts": {
+    "dev": "eleventy --serve --incremental",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty"
+  ],
+  "author": "rob oleary",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+<head>
+	{% if production %}
+		<title>{{ title}}</title>
+	{%else %}
+		<title>DEV - {{ title}}</title>
+	{% endif %}
+	<meta charset="utf-8">
+	<meta name="description" content="{{ description }}"/>
+	<meta name="author" content="Rob O'Leary"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
