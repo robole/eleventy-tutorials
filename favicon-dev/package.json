@@ -1,0 +1,15 @@
+{
+  "name": "production-flag",
+  "version": "1.0.0",
+  "description": "Creates a `production` global variable. This is useful for activites that happen only in dev or production such as minifying assets, showing draft posts, indicating if you are in dev or prod mode, and so on.",
+  "scripts": {
+    "dev": "eleventy --serve --incremental",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

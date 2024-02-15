@@ -77,3 +77,15 @@ We use the GitHub API to provide the additional fields: *description*, *language
 You can read this tutorial for a walkthrough.
 
 The project is in the [github-projects](/github-projects/) folder.
+
+### Favicon to differentiate between dev and production build modes
+
+The demo changes the favicon if it is run in dev mode or production mode. This gives a clear visual indicator of what version of your website you are seeing in the browser.
+
+It is uses the global production flag discussed in [this tutorial](https://www.roboleary.net/webdev/2024/01/24/eleventy-production-flag.html).
+
+![favicon is different in dev mode and prod mode](.img/favicon-dev-prod.png)
+
+You can read **this tutorial** for a walkthrough.
+
+The project is in the [favicon-dev](/favicon-dev/) folder.
