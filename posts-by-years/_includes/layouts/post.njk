@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+{# Only include the syntax highlighter CSS on blog posts #}
+{% block head_stylesheets %}
+		<link rel="stylesheet" href="/style.css">
+		{% include "node_modules/prismjs/themes/prism-okaidia.css" %}
+{% endblock %}

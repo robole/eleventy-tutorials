@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Blog
+permalink: /blog-desc/
+description: "This is a collection of projects that are hosted on GitHub."
+---
+
+<h1>{{ title }}</h1>
+
+<p>My incredible posts grouped by year.</p>
+
+<section class="blog">
+
+  {% for year, posts in collections.postsByYearDesc  %}
+    <h2>{{ year }}</h2>
+
+		{% for post in posts %}
+			<div class="post">
+				<h3>{{ post.data.title }}</h3>
+				<span>|</span>
+				<time>{{ post.date | simpleDate }}</time>
+			</div>
+		{% endfor %}
+		
+
+  {% endfor %}
+
+</section>
