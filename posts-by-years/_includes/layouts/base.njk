@@ -12,10 +12,8 @@
 </head>
 <body>
 	<main id="maincontent">
+		<h1>{{ title }}</h1>
 		{{ content | safe }}
 	</main>
-	{% block body_extra %}
-			<!-- anything additional that child templates want to add -->
-	{% endblock %}
 </body>
 </html>
