@@ -74,7 +74,7 @@ We provide a list of repositories we want to feature in the page in *_data/proje
 
 We use the GitHub API to provide the additional fields: *description*, *language*, and *star count*.
 
-You can read this tutorial for a walkthrough.
+You can read [this tutorial](https://www.roboleary.net/webdev/2024/02/07/eleventy-fetch.html) for a walkthrough.
 
 The project is in the [github-projects](/github-projects/) folder.
 
