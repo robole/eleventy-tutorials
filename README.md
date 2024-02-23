@@ -70,9 +70,7 @@ The project is in the [github-projects](/github-projects/) folder.
 
 It is popular to group posts by year for a blog or archives. I will show you how to do this in ascending or descending order.
 
-![blog with posts grouped by year in ascending order from 2024 to 2022](/.img/group-posts-by-year.png)
-
-You can read this tutorial for a walkthrough.
+![a blog page with the posts grouped by year from newest to oldest. there are 5 posts grouped into 3 groups: 2024, 2023, and 2022.](.img/group-posts-by-year.png)
 
 The project is in the [group-posts-by-year](/group-posts-by-year/) folder.
 
