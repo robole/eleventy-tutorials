@@ -1,0 +1,6 @@
+{
+  "markyMarkdown.tableOfContents.levelRange": "3..3",
+  "markyMarkdown.updateOnSave": true,
+  "markyMarkdown.tableOfContents.listType": "ordered list",
+  "markyMarkdown.tableOfContents.label": "**Tutorial List**"
+}

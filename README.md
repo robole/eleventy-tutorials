@@ -39,13 +39,21 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 
 ## Tutorials
 
-### GitHub Projects
+<!-- TOC -->
+**Tutorial List**
+1. [GitHub projects](#github-projects)
+1. [Group posts by year](#group-posts-by-year)
+1. [Favicon to differentiate between dev and production build modes](#favicon-to-differentiate-between-dev-and-production-build-modes)
+1. [Production flag](#production-flag)
+<!-- /TOC -->
 
-We will create a *projects* page that is populated with data fetched from the GitHub API.
+### GitHub projects
+
+A *projects* page that is populated with data fetched from the GitHub API.
 
 ![projects page](/.img/github-projects-screenshot.png)
 
-We provide a list of repositories we want to feature in the page in *_data/projects.json* in the following format:
+We provide a list of repositories that we want to feature in *_data/projects.json* in the following format:
 
 ```json
 [
@@ -68,7 +76,7 @@ The project is in the [github-projects](/github-projects/) folder.
 
 ### Group posts by year
 
-It is popular to group posts by year for a blog or archives. I will show you how to do this in ascending or descending order.
+It is popular to group posts by year for a blog or archive. I will show you how to do this in ascending or descending order.
 
 ![a blog page with the posts grouped by year from newest to oldest. there are 5 posts grouped into 3 groups: 2024, 2023, and 2022.](.img/group-posts-by-year.png)
 
@@ -76,7 +84,7 @@ The project is in the [group-posts-by-year](/group-posts-by-year/) folder.
 
 ### Favicon to differentiate between dev and production build modes
 
-The demo changes the favicon if it is run in dev mode or production mode. This gives a clear visual indicator of what version of your website you are seeing in the browser.
+Show a different favicon if the project is run in dev mode or production mode. This gives a clear visual indicator of what version of your website you are seeing in the browser.
 
 ![favicon is different in dev mode and prod mode](.img/favicon-dev-prod.png)
 
@@ -86,7 +94,7 @@ The project is in the [favicon-dev](/favicon-dev/) folder.
 
 ### Production flag
 
-A production flag is useful for activites that you want to occur in production such as minifying assets. This project adds an `production` variable that can be used everywhere.
+A production flag is useful for activites that you only want to happen in production such as minifying assets. This project adds a `production` variable that can be used everywhere.
 
 The demo changes the `title` of the homepage if it is run in dev mode or production mode.
 
