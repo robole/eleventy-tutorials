@@ -5,22 +5,19 @@ permalink: /blog-desc/
 description: "This is a collection of projects that are hosted on GitHub."
 ---
 
-<p>My incredible posts grouped by year.</p>
-
 <section class="blog">
+	<p>My incredible posts grouped by year.</p>
+	{% for year, posts in collections.postsByYearDesc  %}
+		<h2>{{ year }}</h2>
 
-  {% for year, posts in collections.postsByYearDesc  %}
-    <h2>{{ year }}</h2>
-
+		<ol>
 		{% for post in posts %}
-			<div class="post">
+			<li class="post">
 				<h3><a href="{{ post.url }}"">{{ post.data.title }}</a></h3>
 				<span>|</span>
 				<time>{{ post.date | simpleDate }}</time>
-			</div>
+			</li>
 		{% endfor %}
-		
-
-  {% endfor %}
-
+		</ol>
+	{% endfor %}
 </section>
