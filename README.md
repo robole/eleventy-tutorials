@@ -49,7 +49,7 @@ We provide a list of repositories we want to feature in the page in *_data/proje
 
 ```json
 [
-![projects page](/.img/github-projects-screenshot.png)  {
+  {
     "title": "Eleventy Tutorials",
     "repository": "https://github.com/robole/eleventy-tutorials"
   },
