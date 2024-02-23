@@ -1,0 +1,14 @@
+{% extends "./base.njk" %}
+
+{# Only include the syntax highlighter CSS on blog posts #}
+{% block head_stylesheets %}
+	<link rel="stylesheet" href="/style.css">
+	<style>
+		{% include "node_modules/prismjs/themes/prism-okaidia.css" %}
+	</style>
+{% endblock %}
+
+{% block main %}
+	<h1>{{ title }}</h1>
+	{{ content | safe }}
+{% endblock %}

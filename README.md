@@ -39,18 +39,6 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 
 ## Tutorials
 
-### Production flag
-
-A production flag is useful for activites that you want to occur in production such as minifying assets. This project adds an `production` variable that can be used everywhere.
-
-The demo changes the `title` of the homepage if it is run in dev mode or production mode.
-
-![title is different in dev mode and prod mode](.img/production-flag-title-modes.png)
-
-You can read [this tutorial](https://www.roboleary.net/webdev/2024/01/24/eleventy-production-flag.html) for a walkthrough.
-
-The project is in the [production-flag](/production-flag/) folder.
-
 ### GitHub Projects
 
 We will create a *projects* page that is populated with data fetched from the GitHub API.
@@ -61,7 +49,7 @@ We provide a list of repositories we want to feature in the page in *_data/proje
 
 ```json
 [
-  {
+![projects page](/.img/github-projects-screenshot.png)  {
     "title": "Eleventy Tutorials",
     "repository": "https://github.com/robole/eleventy-tutorials"
   },
@@ -78,6 +66,16 @@ You can read [this tutorial](https://www.roboleary.net/webdev/2024/02/07/elevent
 
 The project is in the [github-projects](/github-projects/) folder.
 
+### Group posts by year
+
+It is popular to group posts by year for a blog or archives. I will show you how to do this in ascending or descending order.
+
+![blog with posts grouped by year in ascending order from 2024 to 2022](/.img/group-posts-by-year.png)
+
+You can read this tutorial for a walkthrough.
+
+The project is in the [group-posts-by-year](/group-posts-by-year/) folder.
+
 ### Favicon to differentiate between dev and production build modes
 
 The demo changes the favicon if it is run in dev mode or production mode. This gives a clear visual indicator of what version of your website you are seeing in the browser.
@@ -87,3 +85,15 @@ The demo changes the favicon if it is run in dev mode or production mode. This g
 You can read [this tutorial](https://www.roboleary.net/2024/02/15/eleventy-favicon-modes.html) for a walkthrough.
 
 The project is in the [favicon-dev](/favicon-dev/) folder.
+
+### Production flag
+
+A production flag is useful for activites that you want to occur in production such as minifying assets. This project adds an `production` variable that can be used everywhere.
+
+The demo changes the `title` of the homepage if it is run in dev mode or production mode.
+
+![title is different in dev mode and prod mode](.img/production-flag-title-modes.png)
+
+You can read [this tutorial](https://www.roboleary.net/webdev/2024/01/24/eleventy-production-flag.html) for a walkthrough.
+
+The project is in the [production-flag](/production-flag/) folder.
