@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://css-tricks.com/is-vendor-prefixing-dead/",
+    "date": "2021-05-21T00:00:00Z",
+    "data": {
+      "title": "Is Vendor Prefixing Dead?",
+      "description": "Browser vendors slowly began to move away from prefixing in 2012. It appeared that the problems created by vendor prefixes would fade away in time. The question is: has that time come yet?",
+      "image": "/assets/img/external-posts/2021-05-21-prefixing-dead.webp",
+      "publisher": "CSS Tricks",
+      "tags": ["CSS"]
+    }
+  },
+  {
+    "url": "https://css-tricks.com/getting-deep-into-shadows/",
+    "date": "2021-02-22T00:00:00Z",
+    "data": {
+      "title": "Getting Deep Into Shadows",
+      "description": "In web design, using light and shadow can add physical realism and can be used to make rich, tactile interfaces. Let's explore where and when we can use shadows.",
+      "image": "/assets/img/external-posts/2021-02-22-getting-deep-shadows.webp",
+      "publisher": "CSS Tricks",
+      "tags": ["CSS"]
+    }
+  }
+]

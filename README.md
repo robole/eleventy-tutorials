@@ -45,6 +45,7 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 1. [Group posts by year](#group-posts-by-year)
 1. [Favicon to differentiate between dev and production build modes](#favicon-to-differentiate-between-dev-and-production-build-modes)
 1. [Production flag](#production-flag)
+1. [External posts (merge custom data with a collection)](#external-posts-merge-custom-data-with-a-collection)
 <!-- /TOC -->
 
 ### GitHub projects
@@ -103,3 +104,31 @@ The demo changes the `title` of the homepage if it is run in dev mode or product
 You can read [this tutorial](https://www.roboleary.net/webdev/2024/01/24/eleventy-production-flag.html) for a walkthrough.
 
 The project is in the [production-flag](/production-flag/) folder.
+
+### External posts (merge custom data with a collection)
+
+Perhaps you post on other websites and would like to reference those external posts on your blog. For example, [I wrote a couple of articles on CSS Tricks](https://css-tricks.com/author/robjoeol/) and would like to include them in my blog for posterity. Rather than make a markdown file for each external post, you could just create a JSON data file and merge it with your `posts` collections.
+
+This is the *_data/externalPosts.json* file:
+
+```json
+[
+  {
+    "url": "https://css-tricks.com/is-vendor-prefixing-dead/",
+    "date": "2021-05-21T00:00:00Z",
+    "data": {
+      "title": "Is Vendor Prefixing Dead?",
+      "description": "Browser vendors slowly began to move away from prefixing in 2012. It appeared that the problems created by vendor prefixes would fade away in time. The question is: has that time come yet?",
+      "image": "/assets/img/external-posts/2021-05-21-prefixing-dead.webp",
+      "publisher": "CSS Tricks",
+      "tags": ["CSS"]
+    }
+  }
+]
+```
+
+My CSS Tricks posts gets added to my blog list as below.
+
+![includes ](.img/external-posts-blog.png)
+
+The project can be found in the [external-posts](/external-posts/) folder.
