@@ -46,6 +46,7 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 1. [Favicon to differentiate between dev and production build modes](#favicon-to-differentiate-between-dev-and-production-build-modes)
 1. [Production flag](#production-flag)
 1. [External posts (merge custom data with a collection)](#external-posts-merge-custom-data-with-a-collection)
+1. [Convert a RSS Feed into a collection](#convert-a-rss-feed-into-a-collection)
 <!-- /TOC -->
 
 ### GitHub projects
@@ -132,3 +133,13 @@ My CSS Tricks posts gets added to my blog list as below.
 ![includes ](.img/external-posts-blog.png)
 
 The project can be found in the [external-posts](/external-posts/) folder.
+
+### Convert a RSS Feed into a collection
+
+Here I demonstrate how to fetch a RSS feed with [eleventy fetch](https://www.11ty.dev/docs/plugins/fetch/), and parse the feed to use as a collection.
+
+In this instance, I am creating a collection from the articles I wrote for LogRocket. LogRocket creates a RSS feed for each author. I list the LogRocket articles on the "Other Writing" page, as per screenshot below.
+
+![includes ](.img/rss-feed-to-collection.png)
+
+The project can be found in the [rss-feed-to-collection](/rss-feed-to-collection/) folder.

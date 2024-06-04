@@ -1,0 +1,123 @@
+:root {
+  --color-text: hsl(226deg 30% 95%);
+  --color-border: hsl(226deg 10% 40%);
+  --color-background: hsl(226, 30%, 20%); /* hsl(193, 80%, 10%); */
+
+  --font-size-xs: 0.8em;
+  --font-size-s: 0.9em;
+  --font-size-m: 1.2em;
+  --font-size-l: 1.44em;
+  --font-size-xl: 1.728em;
+  --font-size-xxl: 2.074em;
+  --font-size-xxxl: 2.488em;
+
+  --spacing-none: 0;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 0.75rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 4rem;
+  --spacing-xxxl: 6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+p {
+  margin-block-end: var(--spacing-l);
+}
+
+.site-header {
+  position: relative;
+  display: grid;
+  max-width: $max-width;
+  align-items: start;
+
+  padding: var(--spacing-xxl) var(--spacing-s);
+  margin: 0 auto;
+
+  font-size: var(--font-size-l);
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  line-height: 100%;
+  row-gap: var(--spacing-xl);
+
+  & .home {
+    --size: 2rem;
+
+    color: var(--color-secondary);
+  }
+
+  & nav {
+    justify-self: start;
+
+    & ul {
+      padding: 0;
+      margin: 0;
+      line-height: inherit;
+    }
+
+    & li {
+      display: inline-block;
+
+      padding-right: 0.5rem;
+      list-style-type: none;
+    }
+  }
+
+  & a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
+
+#maincontent {
+  max-width: 800px;
+  min-height: 80vh;
+
+  margin: var(--spacing-xxl) 0;
+  padding-inline: var(--spacing-s);
+}
+
+a {
+  color: hsl(224, 80%, 70%);
+
+  text-underline-offset: 0.25rem;
+}
+
+.blog ol {
+  padding: 0;
+}
+
+.post {
+  display: flex;
+  place-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-block-end: var(--spacing-m);
+}
+
+.post h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.post span {
+  font-size: var(--font-size-s);
+}
+
+.post time {
+  font-size: var(--font-size-s);
+}

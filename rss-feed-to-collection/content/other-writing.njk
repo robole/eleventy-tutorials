@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Other Writing
+permalink: /other-writing/
+description: "This is a collection of posts sourced from a RSS Feed."
+---
+
+<section class="blog">
+	<p>This is a collection of posts sourced from the RSS Feed from <a href="https://blog.logrocket.com/author/rob-oleary/feed/">https://blog.logrocket.com/author/rob-oleary/feed/</a></p>
+
+		<ol>
+		{% for post in rss %}
+			<li class="post">
+				<h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+				<span>|</span>
+				<time>{{ post.date | simpleDate }}</time>
+			</li>
+		{% endfor %}
+		</ol>
+	
+</section>
