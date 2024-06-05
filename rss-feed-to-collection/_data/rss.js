@@ -36,21 +36,8 @@ module.exports = async function () {
     transformedPost.url = post.link;
     transformedPost.data = {};
     transformedPost.data.title = post.title;
-    transformedPost.data.image = "/assets/img/blog/logrocket-post-cover.svg";
-    transformedPost.data.description = tidy(post.description);
-    transformedPost.data.publisher = "LogRocket";
-    transformedPost.data.external = true;
     return transformedPost;
   });
 
   return transformedPosts;
 };
-
-function tidy(text) {
-  let noPostReference = text.replace(/<p>The post <a.*<\/p>\n/g, "");
-  let noHTML = noPostReference.replace(
-    /<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/g,
-    ""
-  );
-  return noHTML;
-}
