@@ -45,8 +45,8 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 1. [Group posts by year](#group-posts-by-year)
 1. [Favicon to differentiate between dev and production build modes](#favicon-to-differentiate-between-dev-and-production-build-modes)
 1. [Production flag](#production-flag)
-1. [Merge custom data with a collection (Make a writing archive from custom data)](#merge-custom-data-with-a-collection-make-a-writing-archive-from-custom-data)
-1. [Convert a RSS Feed into a collection (Make a writing archive sourced from RSS feeds)](#convert-a-rss-feed-into-a-collection-make-a-writing-archive-sourced-from-rss-feeds)
+1. [Merge custom data with a collection (Make a writing archive)](#merge-custom-data-with-a-collection-make-a-writing-archive)
+1. [Convert a RSS Feed into a collection (Make a writing archive)](#convert-a-rss-feed-into-a-collection-make-a-writing-archive)
 1. [CSV data file (Make a "currently reading" bookshelf)](#csv-data-file-make-a-currently-reading-bookshelf)
 <!-- /TOC -->
 
@@ -107,7 +107,7 @@ You can read [this tutorial](https://www.roboleary.net/webdev/2024/01/24/elevent
 
 The project is in the [production-flag](/production-flag/) folder.
 
-### Merge custom data with a collection (Make a writing archive from custom data)
+### Merge custom data with a collection (Make a writing archive)
 
 Perhaps you post on other websites and would like to reference those external posts on your blog. For example, [I wrote a couple of articles on CSS Tricks](https://css-tricks.com/author/robjoeol/) and would like to include them in my blog for posterity. Rather than make a markdown file for each external post, you could just create a JSON data file and merge it with your `posts` collections.
 
@@ -135,7 +135,7 @@ My CSS Tricks posts gets added to my blog list as below.
 
 The project can be found in the [external-posts](/external-posts/) folder.
 
-### Convert a RSS Feed into a collection (Make a writing archive sourced from RSS feeds)
+### Convert a RSS Feed into a collection (Make a writing archive)
 
 Here I demonstrate how to fetch a RSS feed with [eleventy fetch](https://www.11ty.dev/docs/plugins/fetch/), and parse the feed to use as a collection.
 
