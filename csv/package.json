@@ -1,0 +1,23 @@
+{
+  "name": "github-projects",
+  "version": "1.0.0",
+  "description": "Creates a collection from a RSS feed.",
+  "scripts": {
+    "dev": "eleventy --serve --incremental",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty"
+  ],
+  "author": "rob oleary",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "csv-parse": "^5.5.6",
+    "fast-xml-parser": "^4.4.0",
+    "luxon": "^3.4.4"
+  }
+}

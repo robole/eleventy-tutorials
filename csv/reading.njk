@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: "\"Currently reading\" bookshelf"
+--- 
+<section class="reading">
+	<ol>
+	{% for book in reading %}
+		<li class="book">
+			<h2 title="{{ book.title }}">{{ book.title }}</h2> 
+			<img class="cover" src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg" />
+			<span class="author"> {{ book.authors }}</span>
+		</li>
+	{% endfor %}
+	</ol>
+</section>
+	
+

@@ -45,8 +45,9 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 1. [Group posts by year](#group-posts-by-year)
 1. [Favicon to differentiate between dev and production build modes](#favicon-to-differentiate-between-dev-and-production-build-modes)
 1. [Production flag](#production-flag)
-1. [External posts (merge custom data with a collection)](#external-posts-merge-custom-data-with-a-collection)
-1. [Convert a RSS Feed into a collection](#convert-a-rss-feed-into-a-collection)
+1. [Merge custom data with a collection (Make a writing archive from custom data)](#merge-custom-data-with-a-collection-make-a-writing-archive-from-custom-data)
+1. [Convert a RSS Feed into a collection (Make a writing archive sourced from RSS feeds)](#convert-a-rss-feed-into-a-collection-make-a-writing-archive-sourced-from-rss-feeds)
+1. [CSV data file (Make a "currently reading" bookshelf)](#csv-data-file-make-a-currently-reading-bookshelf)
 <!-- /TOC -->
 
 ### GitHub projects
@@ -106,7 +107,7 @@ You can read [this tutorial](https://www.roboleary.net/webdev/2024/01/24/elevent
 
 The project is in the [production-flag](/production-flag/) folder.
 
-### External posts (merge custom data with a collection)
+### Merge custom data with a collection (Make a writing archive from custom data)
 
 Perhaps you post on other websites and would like to reference those external posts on your blog. For example, [I wrote a couple of articles on CSS Tricks](https://css-tricks.com/author/robjoeol/) and would like to include them in my blog for posterity. Rather than make a markdown file for each external post, you could just create a JSON data file and merge it with your `posts` collections.
 
@@ -134,12 +135,22 @@ My CSS Tricks posts gets added to my blog list as below.
 
 The project can be found in the [external-posts](/external-posts/) folder.
 
-### Convert a RSS Feed into a collection
+### Convert a RSS Feed into a collection (Make a writing archive sourced from RSS feeds)
 
 Here I demonstrate how to fetch a RSS feed with [eleventy fetch](https://www.11ty.dev/docs/plugins/fetch/), and parse the feed to use as a collection.
 
 In this instance, I am creating a collection from the articles I wrote for LogRocket. LogRocket creates a RSS feed for each author. I list the LogRocket articles on the "Other Writing" page, as per screenshot below.
 
-![includes ](.img/rss-feed-to-collection.png)
+![A page my other writing. It lists articles I wrote for LogRocket with each item showing the title and date.](.img/rss-feed-to-collection.png)
 
 The project can be found in the [rss-feed-to-collection](/rss-feed-to-collection/) folder.
+
+### CSV data file (Make a "currently reading" bookshelf)
+
+Here I demonstrate how to add the CSV file type as a data file.
+
+In this example, I am displaying my "currently reading" bookshelf. I exported the data as a CSV from the [Calibre e-book library app](https://calibre-ebook.com/) that I use to manage my library.
+
+![A page for the currently reading bookshelf. The title says 'books I am reading". 3 books are shown with a title, cover, and author names. ](.img/csv.png)
+
+The project can be found in the [csv](/csv) folder.

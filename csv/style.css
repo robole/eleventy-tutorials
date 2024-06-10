@@ -1,0 +1,134 @@
+:root {
+  --color-text: hsl(226deg 30% 95%);
+  --color-border: hsl(226deg 10% 40%);
+  --color-background: hsl(226, 30%, 20%); /* hsl(193, 80%, 10%); */
+
+  --font-size-xs: 0.8em;
+  --font-size-s: 0.9em;
+  --font-size-m: 1.2em;
+  --font-size-l: 1.44em;
+  --font-size-xl: 1.728em;
+  --font-size-xxl: 2.074em;
+  --font-size-xxxl: 2.488em;
+
+  --spacing-none: 0;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 0.75rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 4rem;
+  --spacing-xxxl: 6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin-block-end: var(--spacing-l);
+}
+
+.site-header {
+  position: relative;
+  display: grid;
+  max-width: $max-width;
+  align-items: start;
+
+  padding: var(--spacing-xxl) var(--spacing-s);
+  margin: 0 auto;
+
+  font-size: var(--font-size-l);
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  line-height: 100%;
+  row-gap: var(--spacing-xl);
+
+  & .home {
+    --size: 2rem;
+
+    color: var(--color-secondary);
+  }
+
+  & nav {
+    justify-self: start;
+
+    & ul {
+      padding: 0;
+      margin: 0;
+      line-height: inherit;
+    }
+
+    & li {
+      display: inline-block;
+
+      padding-right: 0.5rem;
+      list-style-type: none;
+    }
+  }
+
+  & a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
+
+#maincontent {
+  min-height: 80vh;
+  margin: var(--spacing-xxl) 0.25rem;
+  padding-inline: var(--spacing-s);
+}
+
+a {
+  color: hsl(224, 80%, 70%);
+
+  text-underline-offset: 0.25rem;
+}
+
+li {
+  margin-block-end: 1rem;
+}
+
+.reading ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.book {
+  display: grid;
+  grid-template-rows: auto 300px 1fr;
+
+  list-style-type: none;
+
+  h2 {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+  }
+
+  .cover {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .author {
+    margin-block-start: 1.5rem;
+  }
+}
