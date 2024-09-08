@@ -48,6 +48,7 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 1. [Merge custom data with a collection (Make a writing archive)](#merge-custom-data-with-a-collection-make-a-writing-archive)
 1. [Convert a RSS Feed into a collection (Make a writing archive)](#convert-a-rss-feed-into-a-collection-make-a-writing-archive)
 1. [CSV data file (Make a "currently reading" bookshelf)](#csv-data-file-make-a-currently-reading-bookshelf)
+1. [Graph (Post Count)](#graph-post-count)
 <!-- /TOC -->
 
 ### GitHub projects
@@ -154,3 +155,13 @@ In this example, I am displaying my "currently reading" bookshelf. I exported th
 ![A page for the currently reading bookshelf. The title says 'books I am reading". 3 books are shown with a title, cover, and author names. ](.img/csv.png)
 
 The project can be found in the [csv](/csv) folder.
+
+### Graph (Post Count)
+
+Here I demonstrate how to make a graph using [chart.css](https://chartscss.org/). It enables styling a HTML table as a graph without the need for JavaScript. This is great for performance and accessibility.
+
+![ a bar chart of posts grouped by year](./.img/graph.png)
+
+In this example, I create a bar chart of posts grouped by year.
+
+The project can be found in the [graph](/graph/) folder.

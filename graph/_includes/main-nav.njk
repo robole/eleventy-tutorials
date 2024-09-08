@@ -1,0 +1,9 @@
+<header class="site-header">
+  <a class="home" href="/" aria-label="Go to home page">Home</a>
+  <nav aria-label="Main navigation">
+    <ul role="list">
+			<li><a href="/graphs/" {% if permalink == "/graphs/" %}aria-current="page"{% endif %}>Graphs</a></li>
+      <li><a href="/blog/" {% if permalink == "/blog/" %}aria-current="page"{% endif %}>Blog</a></li>
+    </ul>
+  </nav>
+</header>

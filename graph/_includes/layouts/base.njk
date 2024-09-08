@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ title}}</title>
+	<meta charset="utf-8">
+	<meta name="description" content="{{ description }}"/>
+	<meta name="author" content="Rob O'Leary"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	{% block head_stylesheets %}
+		<link rel="stylesheet" href="/style.css">
+
+		{% if stylesheet %}
+			<link rel="stylesheet" href="{{ stylesheet }}">
+		{% endif %}
+	{% endblock %}
+
+</head>
+<body>
+	<main id="maincontent">
+		{% include "main-nav.njk" %}
+		{{ content | safe }}
+	</main>
+</body>
+</html>

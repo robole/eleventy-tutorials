@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Graphs
+permalink: /graphs/
+stylesheet: "https://cdn.jsdelivr.net/npm/charts.css@1.1.0/dist/charts.min.css"
+description: "This is a graph of posts by year."
+---
+
+{% set stats = collections.posts | byYear %}
+{% set numOfPosts = collections.posts.length %}
+
+<div>
+	<table id="post-count" class="charts-css bar show-heading show-labels show-primary-axis data-spacing-4 data-center">
+		<caption>Post Count</caption> 
+		<thead>
+			<tr>
+				<th scope="col"> Year </th> 
+				<th scope="col"> Value </th>
+			</tr>
+		</thead> 
+		<tbody>
+			{% for year, value in stats %}
+				<tr>
+					<th scope="row"> {{ year }}</th> 
+					<td style="--size: calc( {{ value }} / {{ numOfPosts }});"> <span class="data"> {{ value }} </span></td>
+				</tr> 
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
