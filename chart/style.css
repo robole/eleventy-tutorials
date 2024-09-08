@@ -38,6 +38,10 @@ p {
   margin-block-end: var(--spacing-l);
 }
 
+code {
+  font-size: 1.1rem;
+}
+
 #maincontent {
   max-width: 800px;
   min-height: 80vh;
