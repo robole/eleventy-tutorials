@@ -48,7 +48,7 @@ Open one of the tutorial subfolders. Then, run `npm install` (or equivalent for 
 1. [Merge custom data with a collection (Make a writing archive)](#merge-custom-data-with-a-collection-make-a-writing-archive)
 1. [Convert a RSS Feed into a collection (Make a writing archive)](#convert-a-rss-feed-into-a-collection-make-a-writing-archive)
 1. [CSV data file (Make a "currently reading" bookshelf)](#csv-data-file-make-a-currently-reading-bookshelf)
-1. [Charts (Post Count)](#charts-post-count)
+1. [Charts (Make a "post count" bar chart)](#charts-make-a-post-count-bar-chart)
 <!-- /TOC -->
 
 ### GitHub projects
@@ -156,7 +156,7 @@ In this example, I am displaying my "currently reading" bookshelf. I exported th
 
 The project can be found in the [csv](/csv) folder.
 
-### Charts (Post Count)
+### Charts (Make a "post count" bar chart)
 
 This is a demonstration of making a chart using the [chart.css](https://chartscss.org/) library. It enables styling a HTML table as a chart without the need for JavaScript. This is great for performance and accessibility.
 
