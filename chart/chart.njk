@@ -6,8 +6,8 @@ stylesheet: "https://cdn.jsdelivr.net/npm/charts.css@1.1.0/dist/charts.min.css"
 description: "This is a chart of the posts written by year."
 ---
 
-{% set stats = collections.posts | byYear %}
-{% set numOfPosts = collections.posts.length %}
+{% set postCounts = collections.posts | byYear %}
+{% set totalPosts = collections.posts.length %}
 
 <div id="post-count">
 	<table class="charts-css bar show-heading show-labels show-primary-axis data-spacing-4 data-center">
@@ -15,14 +15,14 @@ description: "This is a chart of the posts written by year."
 		<thead>
 			<tr>
 				<th scope="col"> Year </th> 
-				<th scope="col"> Value </th>
+				<th scope="col"> Count </th>
 			</tr>
 		</thead> 
 		<tbody>
-			{% for year, value in stats %}
+			{% for year, count in postCounts %}
 				<tr>
 					<th scope="row"> {{ year }}</th> 
-					<td style="--size: calc( {{ value }} / {{ numOfPosts }});"> <span class="data"> {{ value }} </span> </td>
+					<td style="--size: calc( {{ count }} / {{ totalPosts }});"> <span class="data"> {{ count }} </span> </td>
 				</tr> 
 			{% endfor %}
 		</tbody>
