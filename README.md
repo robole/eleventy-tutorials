@@ -160,7 +160,7 @@ The project can be found in the [csv](/csv) folder.
 
 This is a demonstration of making a chart using the [chart.css](https://chartscss.org/) library. It enables styling a HTML table as a chart without the need for JavaScript. This is great for performance and accessibility.
 
-![ a bar chart of posts grouped by year](./.img/graph.png)
+![a bar chart of posts grouped by year](./.img/graph.png)
 
 In this example, I create a bar chart of the number of blog posts written each year.
 
