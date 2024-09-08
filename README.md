@@ -158,10 +158,10 @@ The project can be found in the [csv](/csv) folder.
 
 ### Graph (Post Count)
 
-Here I demonstrate how to make a graph using [chart.css](https://chartscss.org/). It enables styling a HTML table as a graph without the need for JavaScript. This is great for performance and accessibility.
+This is a demonstration of making a graph using [chart.css](https://chartscss.org/). It enables styling a HTML table as a graph without the need for JavaScript. This is great for performance and accessibility.
 
 ![ a bar chart of posts grouped by year](./.img/graph.png)
 
-In this example, I create a bar chart of posts grouped by year.
+In this example, I create a bar chart of the number of blog posts written each year.
 
 The project can be found in the [graph](/graph/) folder.
