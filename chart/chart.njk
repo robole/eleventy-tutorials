@@ -7,11 +7,17 @@ description: "This is a chart of the posts written by year."
 ---
 
 {% set postCounts = collections.posts | byYear %}
-{% set totalPosts = collections.posts.length %}
+{% set maxPostCount = 0  %}
+
+{% for year, count in postCounts %}
+  {% if count > maxPostCount %}
+    {% set maxPostCount = count %}
+  {% endif %}
+{% endfor %}
 
 <div id="post-count">
 	<table class="charts-css bar show-heading show-labels show-primary-axis data-spacing-4 data-center">
-		<caption>Post Count</span></caption> 
+		<caption>Post Count</caption> 
 		<thead>
 			<tr>
 				<th scope="col"> Year </th> 
@@ -22,7 +28,7 @@ description: "This is a chart of the posts written by year."
 			{% for year, count in postCounts %}
 				<tr>
 					<th scope="row"> {{ year }}</th> 
-					<td style="--size: calc( {{ count }} / {{ totalPosts }});"> <span class="data"> {{ count }} </span> </td>
+					<td style="--size: calc( {{ count }} / {{ maxPostCount }});"> <span class="data"> {{ count }} </span> </td>
 				</tr> 
 			{% endfor %}
 		</tbody>
